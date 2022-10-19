@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gradient-border {
+    border: 30px solid;
+    border-image: linear-gradient(darkred, black) 1;
+}
+
+.header {
+    margin-bottom: 10px;
+}
+
+body {
+    padding: 30px;
+    font-family: Georgia, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Trebuchet MS, sans-serif;
+}
+
+.red-text {
+    color: red;
+}
+
+.tree {
+    float: left;
+    margin: 7px;
+    position: relative;
+}
+
+.letter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-size: 100px;
+}
+
+.comparison {
+    float: right;
+    margin: 7px;
+}
+
+.xerxes {
+    float: left;
+    margin: 7px;
+}
+
+.cliff {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 0.5px solid darkred;
+}
+
+.quote {
+    font-size: 15px;
+    margin: 30px;
+}
+
+.footer-text {
+    font-size: 10px;
+    margin: 0 15px 30px 30px;
+    padding-top: 20px;
+}
+
+p {
+    margin: 10px;
+}

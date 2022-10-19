@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+body {
+    background-image: url("stormy-weather-background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Oxygen, sans-serif;
+}
+
+.top{
+    color: white;
+    background-color: black;
+    background: rgba(0, 0, 0, 0.4);
+    height: 70px;
+    margin-bottom: 200px;
+}
+
+.text {
+    color: white;
+    font-size: 50px;
+}
+
+.song {
+    color: white;
+    border: 10px double white;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 50px;
+    width: 15%;
+    height: 25%;
+}
+
+p {
+    margin: 10px;
+}
+
+@media screen and (max-width: 70em) {
+    .song{
+        width: 300px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-height: 50em) {
+    .song {
+        width: 300px;
+        height: 350px;
+    }
+}
+
+.phone {
+    position:absolute; right:100px; top:20px;
+}
+
+.display {
+    position:absolute; right:20px; top:20px;
+}
+
+.tablet {
+    position:absolute; right:60px; top:20px;
+}
+
+.icon {
+    color: #000000;
+}
+
+.icon:hover {
+    color: white;
+}
+
+.material-icons:hover{
+    color:white;
+}
