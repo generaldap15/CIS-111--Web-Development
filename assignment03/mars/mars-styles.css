@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "mueso-sans", serif;
+    src: url(MuseoSans_500-webfont.woff2) format("woff2");
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 5rem;
+    line-height: 1;
+    background-image: url(mars.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 5rem;
+}
+
+body {
+    font-family: "museo-sans", serif;
+    margin: 0;
+    color: #fff;
+    background: #000;
+}
+
+p {
+    margin: 15px;
+}
+
+.title {
+    text-align: center;
+}
+
+.fact {
+    float: left;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    width: 250px;
+    margin: 20px;
+    font-size: 25px;
+}
+
+.geysers {
+    float: right;
+    width: 250px;
+    border-bottom: 5px solid white;
+    margin: 20px;
+    text-align: center;
+}
+
+.picture {
+    width: auto;
+    height: 150px;
+}
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+@media print {
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+    body {
+        page-break-before: avoid;
+        page-break-after: avoid;
+    }
+
+    img {
+        page-break-inside: avoid;
+        page-break-after: avoid;
+    }
+    .fact{
+        page-break-inside: avoid;
+    }
+}
