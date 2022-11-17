@@ -1,0 +1,31 @@
+@import 'foundation.css';
+
+$colors: (
+        primary: #488832,
+        primary-lite: #e1faea,
+        accent: white,
+        modal-background: #fefefe,
+        blk: black
+);
+
+$padding: 15px;
+$borders: 15px;
+$desktop: 840px;
+
+@function getColor($color-name) {
+  @return map-get($colors, $color-name)
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin border-radius($value) {
+  border-radius: $value;
+}
+
+@mixin font-size($value) {
+  font-size: $value;
+}

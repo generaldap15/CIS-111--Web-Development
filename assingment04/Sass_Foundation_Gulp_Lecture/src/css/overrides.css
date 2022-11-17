@@ -1,0 +1,37 @@
+@import 'foundation.css';
+
+.static-width {
+	display: inline-block;
+	width: 16%;
+}
+
+#logo {
+	height: 146px;
+	width: 347px;
+	background-image: linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,0.0)), url(../images/sfxfcu_logo.jpg);
+}
+
+#titlePane {
+	background-color: #fff;
+	margin-right: 2px;
+	margin-left: 2px;
+}
+
+.links {
+	height: 146px;
+	margin-left: 30px;
+}
+
+.blink {
+	animation: blinker 2s linear infinite;
+}
+
+.red {
+	color: red;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

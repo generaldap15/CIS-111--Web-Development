@@ -1,0 +1,131 @@
+@import 'foundation.css';
+
+
+@font-face {
+    font-family: "avenir";
+    src: url("AvenirLTStd-Black.woff2");
+}
+
+@font-face {
+    font-family: "moon";
+    src: url("Moon2.0-Regular.woff2");
+}
+.font {
+    font-family: "avenir", Comic Sans MS, serif;
+}
+
+.font2 {
+    text-align: center;
+    font-family: "moon", serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+
+}
+
+.container {
+    background: #222;
+    width: 900px;
+    margin: 0 auto;
+    color: white;
+    padding: 15px;
+}
+
+.author {
+    display: flex;
+    justify-content: space-between;
+}
+
+.space {
+    max-width: 100%;
+    padding-bottom: 15px;
+}
+
+.moon{
+    width: 300px;
+    height: 300px;
+    float: right;
+    border-radius: 70%;
+}
+
+.dark {
+    display: flex;
+    height: 320px;
+    width: 320px;
+    background-color: black;
+    border-radius: 70%;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    background: #222;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+a {
+    color: white;
+    border-bottom: 1px dashed white;
+}
+
+.button {
+    display: flex;
+    color: white;
+    justify-content: center;
+
+}
+
+@media print {
+    .space {
+        display: none;
+    }
+
+
+    .moon {
+        display: none;
+    }
+
+    .dark{
+        display: none;
+    }
+
+}

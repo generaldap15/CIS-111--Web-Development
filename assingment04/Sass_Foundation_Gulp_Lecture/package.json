@@ -1,0 +1,28 @@
+{
+  "name": "fourth_lecture_template",
+  "version": "1.0.0",
+  "description": "Foundation, Sass, Gulp",
+  "main": "bin/start_server",
+  "scripts": {
+    "start": "node bin/start_server"
+  },
+  "author": "Howard Bates",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 19.0.0"
+  },
+  "dependencies": {
+    "ejs": "latest"
+  },
+  "devDependencies": {
+    "babel-eslint": "latest",
+    "eslint": "latest",
+    "gulp": "latest",
+    "gulp-newer": "latest",
+    "gulp-git": "latest",
+    "gulp-minify-ejs": "latest",
+    "gulp-sass": "latest",
+    "gulp-terser": "latest",
+    "node-sass": "latest"
+  }
+}
